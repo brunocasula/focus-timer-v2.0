@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  /* border: 1px solid tomato; */
+}
+
+:root {
+  --color-01: white;
+  --color-02: #E1E1E6;
+  --color-03: #323238;
+  --color-04: #02799D;
+  --color-05: #199ec7;
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sr-only {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  appearance: none;
+}
+
+.flex {
+  display: flex;
+}
+
+button {
+  border: none;
+}
+
+#controls button {
+  height: 4.8rem;
+  width: 4.8rem;
+}
+
+#app {
+  text-align: center;
+  align-items: center;
+  gap: 19.2rem;
+}
+
+#timer span {
+  color: var(--color-03);
+  font-family: Roboto;
+  font-size: 12.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#controls {
+  justify-content: center;
+  gap: 4.0rem;
+}
+
+#controls button {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.2rem;
+}
+
+#cards button {
+  border-radius: 2.4rem;
+  height: 15.2rem;
+  width: 13.8rem;
+
+  background-color: var(--color-02);
+  cursor: pointer;
+}
+
+#cards .active {
+  background-color: var(--color-04);
+}
+
+#cards :hover {
+  background-color: var(--color-05);
+}
+
+[data-action="play"],
+[data-action="stop"],
+[data-action="add"],
+[data-action="sub"],
+[data-action="toggleFlorest"],
+[data-action="toggleRain"],
+[data-action="toggleCoffe"],
+[data-action="toggleFirePlace"] {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-action="play"] {
+  background-image: url('../img/play.svg');
+}
+
+[data-action="stop"] {
+  background-image: url('../img/stop.svg');
+}
+
+[data-action="add"] {
+  background-image: url('../img/add.svg');
+}
+
+[data-action="sub"] {
+  background-image: url('../img/sub.svg');
+}
+
+[data-action="toggleFlorest"] {
+  background-image: url('../img/florest.svg');
+}
+
+[data-action="toggleRain"] {
+  background-image: url('../img/rain.svg');
+}
+
+[data-action="toggleCoffe"] {
+  background-image: url('../img/coffe.svg');
+}
+
+[data-action="toggleFirePlace"] {
+  background-image: url('../img/fireplace.svg');
+}

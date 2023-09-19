@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <script type="module" src="./js/script.js" defer></script>
+  <title>Focus Timer v2.0</title>
+</head>
+
+<body>
+  <div id="app" class="flex">
+    <div class="timer-wrapper">
+      <div id="timer">
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+      </div>
+
+
+      <div id="controls" class="flex">
+        <button data-action="play"><span class="sr-only">Iniciar contador</span></button>
+        <button data-action="stop"><span class="sr-only">Pausar contador</span></button>
+        <button data-action="add"><span class="sr-only">Adicionar 5 minutos ao contador</span></button>
+        <button data-action="sub"><span class="sr-only">Subtrair 5 minutos ao contador</span></button>
+      </div>
+    </div>
+
+    <div id="cards">
+      <button data-action="toggleFlorest"></button>
+      <button data-action="toggleRain"></button>
+      <button data-action="toggleCoffe"></button>
+      <button data-action="toggleFirePlace"></button>
+    </div>
+  </div>
+
+</body>
+
+</html>
